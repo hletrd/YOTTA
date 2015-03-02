@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^nofile$ ./index.php?nofile [L]
+RewriteRule ^about$ ./about.php [L]
+RewriteRule ^list$ ./list.php [L]
+RewriteRule ^upload$ ./upload.php [L]
+RewriteRule ^lang$ ./index.php?lang [L]
+RewriteRule ^fetch/([a-z0-9]+)/([a-f0-9]+)$ ./fetch.php?link=$1&password=$2 [L]
+RewriteRule ^auth/([a-z0-9]+)/([a-f0-9]+)/(.*)$ ./auth.php?link=$1&password=$2&captcha=$3 [L]
+RewriteRule ^delete/([a-z0-9]+)/(.*)$ ./delete.php?link=$1&password=$2 [L]
+RewriteRule ^([a-z0-9]+)$ ./download.php?link=$1 [L]

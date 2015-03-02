@@ -1,0 +1,7 @@
+713ea7847adcdd1700e92429f212721a  CentOS-7.0-1406-x86_64-DVD.iso
+39179ca247b95a4adfcc4ecee3f4605d  CentOS-7.0-1406-x86_64-Everything.iso
+099b7cfe761d1ecd7d23eaecfef1a44c  CentOS-7.0-1406-x86_64-GnomeLive.iso
+b7188b1632b5494c6bf458f744cadbfa  CentOS-7.0-1406-x86_64-KdeLive.iso
+3389283dc715ee65e15ef06d9e335acb  CentOS-7.0-1406-x86_64-livecd.iso
+96de4f38a2f07da51831153549c8bd0c  CentOS-7.0-1406-x86_64-NetInstall.iso
+e3afe3f1121d69c40cc23f0bafa05e5d  CentOS-7.0-1406-x86_64-Minimal.iso
