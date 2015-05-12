@@ -7,8 +7,8 @@ if (count($data) < 2) {
 	exit();
 }
 $metadata = unserialize($data[5]);
-if ($metadata['filename'] === '') $metadata['filename'] = $str['hiddenfilename'];
-else $metadata['filename'] .= ' (' . human_filesize($metadata['filesize']) . ')';
+if ($metadata['filename'] === '') $metadata['filename'] = $str['hiddenfilename'] . ' (' . human_filesize($metadata['filesize']) . ', ' . str_replace('%d', date('Y-m-d', strtotime($data[7])), $str['until']) . ')';
+else $metadata['filename'] .= ' (' . human_filesize($metadata['filesize']) . ', ' . str_replace('%d', date('Y-m-d', strtotime($data[7])), $str['until']) . ')';
 $title = $metadata['filename'] . ' - ' . $str['servicename'];
 
 if (isset($metadata['password_delete'])) $deletion = true;
