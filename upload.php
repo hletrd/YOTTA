@@ -2,8 +2,12 @@
 require_once('include.php');
 if (isset($_FILES["file"]) && isset($_POST['password']) && isset($_POST['salt']) && isset($_POST['password_delete']) && isset($_POST['expires']) && isset($_POST['showfilename']) && isset($_POST['enablelist'])) {
 	if ($_FILES["file"]["size"] > $sizelimit) {
-		echo '{"result":"error","desc":"' . $str['err_sizelimit'] . '"}';
-		exit();
+		if (isset($_GET['secret']) && $_GET['secret'] === $secret) {
+
+		} else {
+			echo '{"result":"error","desc":"' . $str['err_sizelimit'] . '"}';
+			exit();
+		}
 	}
 
 	set_time_limit(0);
