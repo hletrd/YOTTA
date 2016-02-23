@@ -10,7 +10,7 @@ function human_filesize($bytes, $decimals = 2) {
 date_default_timezone_set("Asia/Seoul");
 mysql_connect($db_host, $db_user, $db_password);
 mysql_select_db($db_name);
-mysql_query('SET GLOBAL max_allowed_packet=1073741824;');
+//mysql_query('SET GLOBAL max_allowed_packet=1073741824;');
 
 session_start();
 
